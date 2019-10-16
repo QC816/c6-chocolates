@@ -13,13 +13,11 @@ $(document).ready(function(){
 	});
 
 	$(".signUpButton").click(function(event){
-		console.log("event", event);
 		event.preventDefault();
 		$(".signUpForm").fadeIn();
 	});
 
 	$(".closeButton").click(function(event){
-		console.log("event", event);
 		event.preventDefault();
 		$(".signUpForm").hide();
 	});
@@ -29,8 +27,7 @@ $(document).ready(function(){
 		$(".source").delay(1000).fadeIn();
 	});
 
-	$(".magnifyingGlass").on("click", function(event){
-		console.log("event", event);
+	$(".magnifyingGlass").click(function(event){
 		event.preventDefault();
 		$(".searchInput").toggleClass("searchInputSpace");
 	});
